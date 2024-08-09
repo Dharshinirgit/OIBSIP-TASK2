@@ -1,0 +1,61 @@
+//importing required packages
+import java.io.*;
+import java.util.*;
+import java.lang.Math.*;
+//start of class
+class number_guess
+{
+  public static void main(String args[])
+  {
+     Scanner s=new Scanner(System.in);
+	 //initializing scores as zero
+	 int scores=0;
+	 //number guessing game starting 
+	 System.out.println("GUESS THE NUMBER");
+	 System.out.println("*****************");
+	 System.out.println();
+	 String retry="yes";
+	 if(retry=="yes"||retry=="YES"||retry=="Yes"||retry=="Y"||retry=="y")
+	 {
+     	//only 10 attempts allowed	 
+	    for(int j=10;j>=1;j--)
+        {
+          System.out.println("Enter any one number between 1 to 100");
+	      int n=s.nextInt();
+		  System.out.println();
+	      System.out.println("Entered no:"+n);
+	      int random=(int)(Math.random()*101);
+	      System.out.println("guess:"+random);
+		  System.out.println();
+		  //comparing input with guessing number
+	      if(n<random)
+          {
+           System.out.println("Your Guess is too Low");
+          }
+          else if(n>random)
+          {
+           System.out.println("Your Guess is too High");
+          } 	
+		  //if guess matches score updated
+          else if(n==random)
+          {
+           System.out.println("You are correct! You won the Game...");
+		   scores=scores+10;
+		   System.out.println("You have earned "+scores+" points");
+		   System.out.println();
+		   System.out.println("kindly play again");
+		   System.out.println();
+		   break;
+          }	
+		  //displaying no of attempts left to play
+	     if((j-1)>0)
+	     {	 
+          System.out.println("You have "+(j-1)+" chances to play");
+          System.out.println();	 
+	     }		  
+     }//for end          
+    }// if end
+	System.out.println();	
+    System.out.println("Game over! Better Luck Next Time");
+  }
+}  

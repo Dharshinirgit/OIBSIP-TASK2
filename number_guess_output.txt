@@ -1,0 +1,100 @@
+// number guessing game output
+
+D:\java>javac number_guess.java
+
+D:\java>java number_guess
+GUESS THE NUMBER
+*****************
+
+Enter any one number between 1 to 100
+32
+
+Entered no:32
+guess:25
+
+Your Guess is too High
+You have 9 chances to play
+
+Enter any one number between 1 to 100
+23
+
+Entered no:23
+guess:97
+
+Your Guess is too Low
+You have 8 chances to play
+
+Enter any one number between 1 to 100
+34
+
+Entered no:34
+guess:95
+
+Your Guess is too Low
+You have 7 chances to play
+
+Enter any one number between 1 to 100
+78
+
+Entered no:78
+guess:35
+
+Your Guess is too High
+You have 6 chances to play
+
+Enter any one number between 1 to 100
+90
+
+Entered no:90
+guess:18
+
+Your Guess is too High
+You have 5 chances to play
+
+Enter any one number between 1 to 100
+56
+
+Entered no:56
+guess:69
+
+Your Guess is too Low
+You have 4 chances to play
+
+Enter any one number between 1 to 100
+34
+
+Entered no:34
+guess:78
+
+Your Guess is too Low
+You have 3 chances to play
+
+Enter any one number between 1 to 100
+12
+
+Entered no:12
+guess:70
+
+Your Guess is too Low
+You have 2 chances to play
+
+Enter any one number between 1 to 100
+23
+
+Entered no:23
+guess:8
+
+Your Guess is too High
+You have 1 chances to play
+
+Enter any one number between 1 to 100
+12
+
+Entered no:12
+guess:72
+
+Your Guess is too Low
+
+Game over! Better Luck Next Time
+
+D:\java>
